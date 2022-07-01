@@ -1,0 +1,159 @@
+/* Google Font `Raleway` */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500..600&display=swap');
+
+/* Master style */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+:root {
+  --primary-color: #ed3237;
+}
+
+* {
+  list-style: none;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+/* Main Container */
+.main-container {
+  position: relative;
+}
+
+/* Header */
+.con-header {
+  padding: 10px 60px;
+  background: #0F1E7A;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+/* Header Left */
+.con-header .left {
+  width: 140px;
+}
+
+.con-header .right li {
+  margin: 0 10px;
+  padding: 10px 12px;
+  color: #fff;
+  transition: .25s;
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+.con-header .right li:hover {
+  background: var(--primary-color);
+  border-radius: .25rem;
+  color: #fff;
+}
+
+/* Section A */
+.section-a {
+  max-width: 1100px;
+  width: 100%;
+  margin: 100px auto 0 auto;
+}
+
+.section-a .con-card {
+  background: rgb(247, 247, 247);
+  border-radius: .6rem;
+  padding: 30px 24px;
+}
+
+.con-card .image {
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.con-card .image:hover img {
+  transform: scale(1.1);
+}
+
+.con-card .caption .title h1 {
+  font-size: 1.6rem;
+}
+
+.con-card .caption .title .theme {
+  font-size: 1rem;
+  color: rgb(143, 143, 143);
+}
+
+.con-card .caption .title .msg {
+  font-size: 1rem;
+  color: rgb(29, 29, 29);
+}
+
+.bttns {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 8px 24px;
+  font-size: .9rem;
+  text-transform: uppercase;
+  margin-right: 10px;
+  border-radius: .4rem;
+  font-weight: 700;
+  transition: .25s;
+  border: 1px solid var(--primary-color);
+}
+
+.bttns:hover {
+  color: var(--primary-color);
+  background: #fff;
+}
+
+/* Modals */
+.con-modal .modal-title {
+  font-weight: 600;
+}
+
+.con-modal .modal-dialog {
+  max-width: 800px;
+  width: 100%;
+}
+
+.con-modal .modal-body .image {
+  width: 50%;
+}
+
+.con-modal .modal-body .caption .caption-header {
+  font-weight: 600;
+
+}
+
+.con-modal .modal-body .caption .caption-body label {
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+/* Footer */
+.main-footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.main-footer p {
+  font-size: .8rem;
+}
