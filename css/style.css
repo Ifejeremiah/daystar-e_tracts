@@ -69,7 +69,7 @@ img {
   color: #fff;
 }
 
-/* Section A */
+/* Section A - Card*/
 .section-a {
   max-width: 1100px;
   width: 100%;
@@ -122,6 +122,31 @@ img {
 .bttns:hover {
   color: var(--primary-color);
   background: #fff;
+}
+
+.con-card .caption .con-social {
+  margin: 60px 0;
+}
+
+.con-card .caption .con-social .img {
+  width: 160px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: .25s;
+  filter: brightness(80%);
+}
+
+.con-card .caption .con-social .img:hover {
+  filter: brightness(60%);
+}
+
+.con-card .caption .con-social .share i {
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+
+.con-card .caption .con-social .share i:hover {
+  transform: scale(0.96) translateY(-8px);
 }
 
 /* Modals */
