@@ -1,0 +1,41 @@
+@media (min-width: 992px) {
+
+  /* Header */
+  .con-header {
+    padding: 10px 60px;
+  }
+
+  /* Header Right */
+  .con-header .right .header-icon {
+    display: none !important;
+  }
+
+  .con-header .right ul {
+    display: flex !important;
+  }
+
+
+  /* Section A - Card */
+  .section-a {
+    margin: 100px auto 0 auto;
+  }
+
+  .section-a .con-card {
+    display: flex;
+    padding: 30px 24px;
+  }
+
+  .bttns {
+    margin-top: 0;
+  }
+
+  /* Modals */
+  .con-modal .modal-body {
+    display: flex;
+  }
+
+  .con-modal .modal-body .image {
+    width: 50%;
+    margin-bottom: 0;  
+  }
+}
