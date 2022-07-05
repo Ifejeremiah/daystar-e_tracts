@@ -14,6 +14,10 @@
     display: flex !important;
   }
 
+  /* Slider */
+  .con-slider .slider {
+    display: none;
+  }
 
   /* Section A - Card */
   .section-a .con-card {
@@ -36,6 +40,6 @@
 
   .con-modal .modal-body .image {
     width: 50%;
-    margin-bottom: 0;  
+    margin-bottom: 0;
   }
 }

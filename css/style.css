@@ -36,6 +36,14 @@ img {
 /* Main Container */
 .main-container {
   position: relative;
+  /* z-index: 10; */
+  background: #fff;
+  transition: .5s;
+  right: 0;
+}
+
+.main-container.slide-left {
+  right: 60%;
 }
 
 /* Header */
@@ -44,8 +52,7 @@ img {
   background: #0F1E7A;
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
+  width: 100%;
   z-index: 1000;
   height: 60px;
 }
@@ -57,8 +64,17 @@ img {
 
 /* Header Right */
 .con-header .right .header-icon {
-  color: #fff;
   font-size: 1.4rem;
+}
+
+.con-header .right .header-icon i {
+  padding: 14px;
+  color: #fff;
+  display: none;
+}
+
+.con-header .right .header-icon i.active {
+  display: block;
 }
 
 .con-header .right ul {
@@ -80,11 +96,36 @@ img {
   color: #fff;
 }
 
+/* Slider */
+.con-slider .slider {
+  height: 100vh;
+  background: #000000f0;
+  width: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: .25s;
+  animation: pull-right;
+  color: rgb(201 201 201);
+}
+
+.con-slider .slider {
+  padding: 100px 20px;
+}
+
+.con-slider .slider li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
 /* Section A - Card */
 .section-a {
   max-width: 1100px;
   width: 100%;
-  margin: 90px auto 0 auto;
+  margin: 0 auto;
+  padding-top: 90px;
 }
 
 .section-a .con-card {
@@ -174,7 +215,7 @@ img {
 }
 
 .con-modal .modal-body .image {
-  margin-bottom: 14px;  
+  margin-bottom: 14px;
 }
 
 .con-modal .modal-body .caption .caption-header {
