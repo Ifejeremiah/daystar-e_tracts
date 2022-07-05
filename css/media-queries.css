@@ -16,13 +16,13 @@
 
 
   /* Section A - Card */
-  .section-a {
-    margin: 100px auto 0 auto;
-  }
-
   .section-a .con-card {
     display: flex;
     padding: 30px 24px;
+  }
+
+  .con-card .image {
+    width: 100%;
   }
 
   .bttns {
